@@ -7,3 +7,13 @@ Solution:
 1. Read the file line by line. Idenfiy the direction(line[i]). Identify the magnitude (line[1:]).
 2. Apply the rotation to the starting position of 50. Implemented using a while loop. Floor the postion by 100 to calculate the number of complete rotations (number of 0s), as well as modulo the position by 100 to remove complete rotations.
 3. Add a counter to count the number of complete rotations, and you have the solution!
+
+Day 2
+Find out if a range of numbers are composed of substrings. 
+Solution (part 1):
+1. If length of number is odd, continue since invalid ids contain 2 substrings
+2. Split the string into 2 and check.
+Solution (part 2):
+1. Using an algorithm, a string S made of substring T, S+S[1:-1] will contain S.
+2. Apply this logic, remove the even length checker.
+badabing badaboom 
