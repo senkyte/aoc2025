@@ -23,3 +23,10 @@ Find largest number comparised of n digits in a string of digits
 Solution:
 1. Using an greedy algorithm, check for every possible valid digit in a range, so on
 thats... it. sum it up and you got the answer
+
+Day 4
+WOW. Surprisingly easier than day 3. 
+Find all valid @. Condition: There must be < 4 @ around a 3x3 radius. For the second part, you are allowed to remove valids and iterate again
+Solution:
+1. Check 3x3 for every @. If valid, add and remove
+2. Loop until there are no longer valid @.
