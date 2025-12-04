@@ -1,11 +1,11 @@
 def largest_number(bank, k):
-    stack = []
-    remove = len(bank) - k
+    stack = [] # stack because we poppin
+    remove = len(bank) - k # the limited range
 
     for digit in bank:
-        while stack and remove > 0 and stack[-1] < digit:
-            stack.pop()
-            remove -= 1
+        while stack and remove > 0 and stack[-1] < digit: # checks if latest stack digit is less than digit
+            stack.pop() # removes latest index of stack (thats stack)
+            remove -= 1 # reduces the range by 1
         stack.append(digit)
 
     return int("".join(stack[:k]))

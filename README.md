@@ -17,3 +17,9 @@ Solution (part 2):
 1. Using an algorithm, a string S made of substring T, S+S[1:-1] will contain S.
 2. Apply this logic, remove the even length checker.
 badabing badaboom 
+
+Day 3
+Find largest number comparised of n digits in a string of digits
+Solution:
+1. Using an greedy algorithm, check for every possible valid digit in a range, so on
+thats... it. sum it up and you got the answer
