@@ -30,3 +30,15 @@ Find all valid @. Condition: There must be < 4 @ around a 3x3 radius. For the se
 Solution:
 1. Check 3x3 for every @. If valid, add and remove
 2. Loop until there are no longer valid @.
+
+Day 5 
+Given a list of ranges, check the number of valid ints. 
+Part 1 Solution:
+1. Read all of the ranges. Store it into a list as a list [lower, upper]
+2. Read all of the values needed to be checked. Iterate through the list and check with a simple inequality check.
+3. Record the number of valid ones.
+Part 2 Solution:
+1. Create a new list merged. We now just gotta merge all the ranges then find the max number of valid ids
+2. This code runs under the assumption that the id ranges get bigger and bigger ONLY. 
+3. Check if the ranges are within the current range, if so overwrite. Else if not in current range, we can just append it to the merge list and replace the current range with the latest range.
+4. Calculate the total number with basic math.
